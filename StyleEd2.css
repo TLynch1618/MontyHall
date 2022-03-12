@@ -1,0 +1,213 @@
+.header {
+	background-color: orange;
+	text-align: center;
+	color: white;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	background-color: black;
+}
+
+/* Create three equal columns that float next to one another */
+.game_Columns {
+	float: left;
+	width: 33.33%;
+	padding: 15px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+/*Container for game doors*/
+#container {
+	width: 33.33%;
+	height: 300px;
+	position: relative;
+	background: orange;
+}
+
+/*Game doors*/
+.door {
+	width: 300px;
+	height: 250px;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: lightblue;
+}
+
+/*Border around game door*/
+.select:hover {
+	border-style: solid;
+}
+
+/*Center text on door*/
+.door_label {
+	position: absolute;
+	margin-left: 42%;
+	margin-top: 40%;
+	color: white;
+}
+
+/*Dialogue Center*/
+.dialogue_background {
+	background-image: url("speechbubble.png");
+	background-color: white;
+	width: 1000px;
+	height: 250px;
+	background-repeat: no-repeat;
+	background-size: 1000px 250px;
+	margin-left: 8%;
+	margin-top: 20px;
+}
+
+/*Create div in dialogue center to control text*/
+.dialogue_commentary {
+	position: absolute;
+	margin-left: 15%;
+	margin-top: 3%;
+	color: black;
+	width: 700px;
+	height: 175px;
+}
+
+/*Modify input field*/
+input[type=text] {
+	width: 175px;
+	box-sizing: border-box;
+	border: none;
+	border-bottom: 2px solid black;
+	text-align: center;
+	margin-left: 20px;
+}
+
+/*Continue Button*/
+.button {
+	background-color: lightblue;
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: block;
+	font-size: 16px;
+	position: absolute;
+	margin: 25px 90%;
+	cursor: pointer;
+	-webkit-transition-duration: 0.4s;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.button:hover {
+	background-color: white;
+	color: black;
+}
+
+/*Container for Final Door*/
+#containerF {
+	width: 100%;
+	height: 600px;
+	position: relative;
+	background: black;
+}
+/*Final Door*/
+.doorFinal {
+	width: 750px;
+	height: 600px;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: lightblue;
+}
+
+/*Center text Final on door*/
+.door_label_final {
+	position: absolute;
+	margin-top: 40%;
+	margin-left: 40%;
+	color: white;
+	font-size: 50px;
+}
+
+/*Display first donkey*/
+.donkey {
+	background-image: url("donkeyface.jpg");
+	width: 300px;
+	height: 250px;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	animation: fadeIn 5s;
+	-webkit-animation: fadeIn 5s;
+	-moz-animation: fadeIn 5s;
+	-o-animation: fadeIn 5s;
+	-ms-animation: fadeIn 5s;
+}
+
+/*Display final donkey*/
+.finaldonkey {
+	background-image: url("donkeyface.jpg");
+	background-repeat: no-repeat;
+	background-size: 750px 600px;
+	width: 750px;
+	height: 600px;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	animation: fadeIn 5s;
+	-webkit-animation: fadeIn 5s;
+	-moz-animation: fadeIn 5s;
+	-o-animation: fadeIn 5s;
+	-ms-animation: fadeIn 5s;
+}
+
+/*Display final car*/
+.car {
+	background-image: url("car.png");
+	background-repeat: no-repeat;
+	background-size: 750px 600px;
+	width: 750px;
+	height: 600px;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	animation: fadeIn 5s;
+	-webkit-animation: fadeIn 5s;
+	-moz-animation: fadeIn 5s;
+	-o-animation: fadeIn 5s;
+	-ms-animation: fadeIn 5s;
+}
+
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}

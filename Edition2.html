@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<title>Monty Hall</title>
+
+<link rel="stylesheet" href="StyleEd2.css">
+
+<meta charset="utf-8">
+<meta name="viewport" content="width-device-width, initial-scale-1">
+
+<style>
+</style>
+
+</head>
+
+<body>
+
+<div class="header">
+	
+	<h1>Let's Make A Deal!</h1>
+
+</div>
+
+<div id="Game" class="row">
+
+	<div id="container" class="game_Columns">
+
+		<div id="door1" class="select door">
+
+			<p class="door_label">Door 1</p>
+
+		</div>
+
+	</div>
+
+	<div id="container" class="game_Columns">
+
+		<div id="door2" class="select door">
+
+			<p class="door_label">Door 2</p>
+
+		</div>
+
+	</div>
+
+	<div id="container" class="game_Columns">
+
+		<div id="door3" class="select door">
+
+			<p class="door_label">Door 3</p>
+
+		</div>
+
+	</div>
+
+</div>
+
+<div id="Dialogue" class="dialogue_background">
+
+	<div id="Comm1" class="dialogue_commentary">
+		<p>Hello, and welcome to Let's Make A Deal!  I am your host Monty Hall.  Behind one of these doors you may find a <strong>brand new car</strong>!  But, behind the other two doors are donkeys.  It is up to <strong>you</strong> to figure out which door holds your prize.</p>
+		<form>
+			<label for="PlayrName">First, let's find out who we're talking to.  What is your name? </label>
+			<input type="text" id="PlayrName" name="PlayrName" value="John">
+		</form>
+		<button id="Continue1" class="button">Continue</button>
+	</div>
+
+	<div id="Comm2" class="dialogue_commentary" style="display: none;">
+
+		<p id="namescript"></p>
+	</div>
+
+	<div id="Comm3" class="dialogue_commentary" style="display: none;">
+
+		<p id="doorselectscript"></p>
+		<button id="Continue2" class="button" style="display: none;">Done!</button>
+	</div>
+
+	<div id="Comm4" class="dialogue_commentary" style="display: none;">
+
+		<p id="confirmationscript"></p>
+		<button id="Continue3" class="button" style="display: none;">Okay!</button>
+
+	</div>
+	
+	<div id="Comm5" class="dialogue_commentary" style="display: none;">
+	
+		<p id="frstDonkeyscript"></p>
+		<button id="Continue4" class="button" style="display: none;">What's the question?</button>
+		
+	</div>
+	
+	<div id="Comm6" class="dialogue_commentary" style="display: none;">
+	
+		<p id="switchscript"></p>
+		<button id="Confirm1" class="button" style="display: none; margin: 25px 60%; width: 150px;" onclick="stayDoor()">Stay with my door</button>
+		<button id="Confirm2" class="button" style="display: none;" onclick="switchDoor()">Switch doors</button>
+		
+	</div>
+
+</div>
+
+<div id="containerF" style="display: none;">
+
+	<div id="Final" class="doorFinal" style="display: none;">
+	
+		<p id="finalLabel" class="door_label_final" style="display: none;"></p>
+		<button id="openfinalbutton" class="button" style="display: none; margin: 500px 110%; width: 150px;" onclick="openFinal()">Open it up!</button>
+	
+	</div>
+
+</div>
+
+
+<script src="SiteEd2.js"></script>
+
+</body>
+</html>
